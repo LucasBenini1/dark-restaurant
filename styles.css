@@ -6,7 +6,16 @@ header{
     background-color: black;
 }
 
-  .playfair-display-sc-regular {
+p, h2, h1, li{
+    color: rgb(114, 112, 112);
+    font-family: "Playfair Display SC", serif;
+}
+h5{
+    color: rgb(114, 112, 112);
+    font-weight: bold;
+}
+
+.playfair-display-sc-regular {
     font-family: "Playfair Display SC", serif;
     font-weight: 400;
     font-style: normal;
@@ -17,7 +26,7 @@ header{
     font-style: normal;
 }
 
-  /*-------------------------------------*/
+  /*-----------------Header--------------------*/
 
 header .navbar-brand{
     color: #8B5E3C;
@@ -41,7 +50,7 @@ header .nav .nav-link:focus {
     background-color: #ee9f62;
 }
 
-/* Imagem */
+/* ----------------Imagem----------------- */
 
 #imagemPrincipal img{
     max-height: calc(100vh - 110px);
@@ -69,23 +78,7 @@ header .nav .nav-link:focus {
     pointer-events: none;
 }
 
-.carousel-inner{
-    height: fit-content;
-
-}.carousel-inner::before{
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit!";
-    text-align: center;
-    font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 9999;
-}
-iframe{
-    width: 100%;
-}
+/*-----------Cardapio------------*/
 
 #cardapio .nav-link.active{
     background-color: #8B5E3C;
@@ -101,11 +94,25 @@ iframe{
     color: #122b39;
     font-weight: bold;
 }
-
 .nav-tabs .nav-link.active {
     border-bottom: 3px solid #eb8e48;
     border-radius: 4px 4px 0 0;
 }
 .element nav{
     border-bottom: 1px solid #8B5E3C;
+}
+
+/*----Localizacao --------*/
+iframe{
+    width: 100%;
+}
+
+.transition-element{
+    transition: .9s;
+    opacity: 0;
+    transform: translateY(200px);
+}
+.active{
+    opacity: 1;
+    transform: translate(0px);
 }
