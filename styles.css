@@ -19,24 +19,24 @@ header{
 
   /*-------------------------------------*/
 
-.navbar-brand{
+header .navbar-brand{
     color: #8B5E3C;
     font-family: "Playfair Display SC", serif;
 }
-.navbar-brand:hover{
+header .navbar-brand:hover{
     color: #8B5E3C;
 }
-.navbar-toggler-icon{
+header .navbar-toggler-icon{
     background-color: #8B5E3C;
 }
-.nav-item a{
+header .nav-item a{
     color: #ccc;
 }
-.nav .nav-link{
+header .nav .nav-link{
     color: #8B5E3C;
 }
-.nav .nav-link:hover,
-.nav .nav-link:focus {
+header .nav .nav-link:hover,
+header .nav .nav-link:focus {
     color: #8B5E3C; /* Cor desejada */
     background-color: #ee9f62;
 }
@@ -85,4 +85,27 @@ header{
 }
 iframe{
     width: 100%;
+}
+
+#cardapio .nav-link.active{
+    background-color: #8B5E3C;
+    color: #FFF;
+}
+#cardapio .nav-link{
+    color: #8B5E3C;
+    cursor: pointer;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    color: #122b39;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid #eb8e48;
+    border-radius: 4px 4px 0 0;
+}
+.element nav{
+    border-bottom: 1px solid #8B5E3C;
 }
