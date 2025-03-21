@@ -1,0 +1,85 @@
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+header{
+    background-color: black;
+}
+
+  .playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  /*-------------------------------------*/
+
+.navbar-brand{
+    color: #8B5E3C;
+    font-family: "Playfair Display SC", serif;
+}
+.navbar-brand:hover{
+    color: #8B5E3C;
+}
+.navbar-toggler-icon{
+    background-color: #8B5E3C;
+}
+.nav-item a{
+    color: #ccc;
+}
+.nav .nav-link{
+    color: #8B5E3C;
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+    color: #8B5E3C; /* Cor desejada */
+    background-color: #ee9f62;
+}
+
+/* Imagem */
+
+#imagemPrincipal img{
+    max-height: calc(100vh - 110px);
+    width: 100%;
+    display: block;
+}
+.imagemAmbiente {
+    position: relative;
+    display: block;
+    max-width: 50%;
+    max-height: 100vh;
+}
+
+.imagemAmbiente::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Mantém a largura ajustada */
+    height: 100%;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0) 30%, 
+        rgba(0, 0, 0, 1) 100%
+    );
+    pointer-events: none;
+}
+
+.carousel-inner{
+    height: fit-content;
+
+}.carousel-inner::before{
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit!";
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
